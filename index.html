@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href=".assets/style.css" rel="stylesheet" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors!</h1>
+    <section class="description">
+      <h2>Description</h2>
+      <p>
+        The classic game of rock, paper and of course scissors. The Game is
+        played with 2 people normally but we'll subsitute the second person with
+        thew computer!. Pretty simple description, if you however like to learn
+        more about it click the button for more information.
+      </p>
+      <div class="description-button">
+        <a
+          href="https://wrpsa.com/the-official-history-of-rock-paper-scissors/"
+          target="”_blank”"
+          rel="noopener"
+        >
+          <button>Info</button>
+        </a>
+      </div>
+    </section>
+    <section class="how-to-play">
+      <h2>How to play</h2>
+      <p>
+        The game is pretty simple, in this circumstance the player (you) have
+        the option of choosing between 3 choises: Rock, Paper, and Scissors.
+        <br />
+        If the player choses the same option as the computer it counts as a tie.
+      </p>
+    </section>
+    <section class="list-of-outcomes">
+      <h2>List Of Outcomes</h2>
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Paper beats Rock</li>
+        <li>Scissors beats Paper</li>
+        <li>
+          If the chosen option is the same as the computer, it counts as a tie
+        </li>
+      </ul>
+    </section>
+    <script type="module" src="app.js"></script>
+    <section class="game-container">
+      <content>
+        <label>
+          <input
+            type="radio"
+            name="choice"
+            class="ImgChoice"
+            value="rock"
+            checked
+          />
+          <img
+            src="https://dummyimage.com/200x200/a8a8a8/000000.png&text=Rock"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="choice"
+            class="ImgChoice"
+            value="rock"
+            checked
+          />
+          <img
+            src="https://dummyimage.com/200x200/a8a8a8/000000.png&text=Paper"
+          />
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="choice"
+            class="ImgChoice"
+            value="rock"
+            checked
+          />
+          <img
+            src="https://dummyimage.com/200x200/a8a8a8/000000.png&text=Scissors"
+          />
+        </label>
+        <div class="game-results">
+          <ul>
+            <li>Games<span id="number-of-games"> 0</span></li>
+            <li>Wins<span id="number-of-wins"> 0</span></li>
+            <li>Loses<span id="number-of-loses"> 0</span></li>
+            <li>Ties<span id="number-of-ties"> 0</span></li>
+          </ul>
+        </div>
+      </content>
+    </section>
+  </body>
+</html>
